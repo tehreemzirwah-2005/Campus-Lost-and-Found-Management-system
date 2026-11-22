@@ -1,0 +1,126 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #243247;
+}
+
+header {
+    background-color: #173b68;
+    color: white;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #a9d5ff;
+}
+
+.hero {
+    text-align: center;
+    padding: 110px 20px;
+    min-height: 70vh;
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin-bottom: 18px;
+    color: #173b68;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #526174;
+}
+
+.buttons button {
+    background-color: #2167b2;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    margin: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buttons button:hover {
+    background-color: #174b83;
+}
+
+footer {
+    background-color: #173b68;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav a {
+        margin: 6px;
+        display: inline-block;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+}
+
+.item-form {
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.item-form input,
+.item-form textarea {
+    padding: 14px;
+    border: 1px solid #ccd5e0;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.item-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.item-form button {
+    background-color: #2167b2;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
